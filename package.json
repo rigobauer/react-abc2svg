@@ -1,6 +1,6 @@
 {
   "name": "react-abc2svg",
-  "version": "1.0.0",
+  "version": "1.0.0-beta3",
   "description": "react-abc2svg React component",
   "main": "lib/index.js",
   "module": "es/index.js",
