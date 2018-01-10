@@ -1,14 +1,26 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React, { Component } from 'react'
+import { render } from 'react-dom'
 
-import Example from '../../src'
+import Abc2Svg from '../../src'
 
 class Demo extends Component {
+  state = {
+    abcNotation: 'X:1\nT:Test\nM:4/4\nC:Trad.\nK:G\n|:GABc dedB|dedB dedB|c2ec B2dB|c2A2 A2BA|'
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ abcNotation: 'X:1\nT:Test\nM:4/4\nC:Trad.\nK:G\n|:Gccc dedB|dedB dedB|c2ec B2dB|c2A2 A2BA|' })
+    }, 5000)
+  }
   render() {
-    return <div>
-      <h1>react-abc2svg Demo</h1>
-      <Example/>
-    </div>
+    const { abcNotation } = this.state
+    return (
+      <div style={{ border: '1px solid black', padding: '100px' }}>
+        <Abc2Svg
+          abcNotation={abcNotation}
+        />
+      </div>
+    )
   }
 }
 

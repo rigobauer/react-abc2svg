@@ -4,7 +4,16 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe react-abc2svg here.
+A React component that uses the awesome [abc2svg](https://github.com/moinejf/abc2svg) to display music notation written using the [ABC notation](http://abcnotation.com).
+
+### Usage
+
+```js
+<Abc2Svg
+  abcNotation={'X:1\nT:Example\nM:4/4\nC:Trad.\nK:G\n|:Gccc dedB|dedB dedB|c2ec B2dB|c2A2 A2BA|'}
+  showErrors
+/>
+```
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
