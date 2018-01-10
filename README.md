@@ -18,8 +18,8 @@ A React component that uses the awesome [abc2svg](https://github.com/moinejf/abc
 [build-badge]: https://img.shields.io/travis/rigobauer/react-abc2svg/master.png?style=flat-square
 [build]: https://travis-ci.org/rigobauer/react-abc2svg
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+[npm-badge]: https://img.shields.io/npm/v/react-abc2svg.png?style=flat-square
+[npm]: https://www.npmjs.org/package/react-abc2svg
 
 [coveralls-badge]: https://img.shields.io/coveralls/rigobauer/react-abc2svg/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/rigobauer/react-abc2svg
