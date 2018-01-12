@@ -44,6 +44,9 @@ describe('Abc2Svg', () => {
       .to.equal(true)
     expect(Abc2Svg.prototype.componentWillUnmount.notCalled)
       .to.equal(true)
+    wrapper.unmount()
+    expect(Abc2Svg.prototype.componentWillUnmount.calledOnce)
+      .to.equal(true)
   })
 
 })
