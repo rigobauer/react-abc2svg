@@ -41,11 +41,12 @@ class Abc2Svg extends PureComponent {
 
   render() {
     const { abcNotation, showErrors } = this.props
+    const { containerWidth } = this.state    
 
     let abc = new Abc(this.abcCallbacks)
     this.abcCallbacks.abc_svg_output = ''
 		this.abcCallbacks.abc_error_output = ''
-    abc.tosvg('ABC NOTATION', this.state.containerWidth + abcNotation)
+    abc.tosvg('ABC NOTATION', containerWidth + abcNotation)
 
     return (
       <div style={{ width: '100%' }} >
