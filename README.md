@@ -2,6 +2,7 @@
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
+[![npm downloads][npm-downloads-badge]][npm-downloads]
 [![Coveralls][coveralls-badge]][coveralls]
 [![Commitizen friendly][commitizen-badge]][commitizen]
 
@@ -21,6 +22,9 @@ A React component that uses the awesome [abc2svg](https://github.com/moinejf/abc
 
 [npm-badge]: https://img.shields.io/npm/v/react-abc2svg.png?style=flat-square
 [npm]: https://www.npmjs.org/package/react-abc2svg
+
+[npm-downloads-badge]: https://img.shields.io/npm/dm/react-abc2svg.svg
+[npm-downloads]: https://npm-stat.com/charts.html?package=react-abc2svg
 
 [coveralls-badge]: https://img.shields.io/coveralls/rigobauer/react-abc2svg/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/rigobauer/react-abc2svg
