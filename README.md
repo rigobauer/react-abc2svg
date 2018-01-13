@@ -3,6 +3,7 @@
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
+[![Commitizen friendly][commitizen-badge]][commitizen]
 
 A React component that uses the awesome [abc2svg](https://github.com/moinejf/abc2svg) to display music notation written using the [ABC notation](http://abcnotation.com).
 
@@ -23,3 +24,6 @@ A React component that uses the awesome [abc2svg](https://github.com/moinejf/abc
 
 [coveralls-badge]: https://img.shields.io/coveralls/rigobauer/react-abc2svg/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/rigobauer/react-abc2svg
+
+[commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
+[commitizen]: http://commitizen.github.io/cz-cli/
