@@ -20,10 +20,10 @@ describe('Abc2Svg', () => {
   })
 
   it('renders <Abc2Svg /> with a simple abcNotation', () => {
-    const wrapper = render(<Abc2Svg abcNotation={'%%fullsvg myprefix\nX:1\nT:Test\nM:4/4\nK:G\nAggg'} />, { disableLifecycleMethods: true })
+    const wrapper = render(<Abc2Svg abcNotation={'%%fullsvg randomprefix\nX:1\nT:Test\nM:4/4\nK:G\nAggg'} />, { disableLifecycleMethods: true })
     expect(wrapper.find('.nobrk'))
       .to.have.length(1)
-    expect(wrapper.find('.f1myprefix').html())
+    expect(wrapper.find('.f1randomprefix').html())
       .to.equal('Test')
   })
 
