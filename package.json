@@ -60,5 +60,8 @@
     "ghooks": {
       "pre-commit": "npm run test"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
