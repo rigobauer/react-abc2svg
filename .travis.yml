@@ -12,9 +12,8 @@ before_install:
 after_success:
   - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - npm run build
   - npm run travis-deploy-once "npm run semantic-release"
-deploy:
-  skip_cleanup: true
 branches:
   only:
     - master
