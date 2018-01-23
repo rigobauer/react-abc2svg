@@ -22,7 +22,7 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
-    "abc2svg": "^1.15.7",
+    "abc2svg": "^1.15.8",
     "prop-types": "^15.6.0"
   },
   "peerDependencies": {
@@ -39,7 +39,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "semantic-release": "^12.2.2",
-    "sinon": "^4.1.6",
+    "sinon": "^4.2.0",
     "travis-deploy-once": "^4.3.2"
   },
   "author": "",

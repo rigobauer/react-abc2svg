@@ -5,11 +5,11 @@ import Abc2Svg from '../../src'
 
 class Demo extends Component {
   state = {
-    abcNotation: 'X:1\nT:Test\nM:4/4\nC:Trad.\nK:G\n|:GABc dedB'
+    abcNotation: 'X:1\nT:Test\nM:4/4\nK:C\n|:GcAB dedB|dedB dedB|c2ec B2dB|c2A2 A2BA|'
   }
   componentDidMount() {
     setTimeout(() => {
-      this.setState({ abcNotation: 'X:1\nT:Test\nM:4/4\nC:Trad.\nK:G\n|:GcAB dedB|dedB dedB|c2ec B2dB|c2A2 A2BA|' })
+      this.setState({ abcNotation: 'X:1\nT:Test\nM:4/4\nK:C\n|:Gccc dedB|dedB dedB|c2ec B2dB|c2A2 A2BA|' })
     }, 5000)
   }
   render() {

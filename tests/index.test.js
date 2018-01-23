@@ -20,17 +20,17 @@ describe('Abc2Svg', () => {
   })
 
   it('renders <Abc2Svg /> with a simple abcNotation', () => {
-    const wrapper = render(<Abc2Svg abcNotation={'X:1\nT:Test\nM:4/4\nK:G\nAggg'} />, { disableLifecycleMethods: true })
+    const wrapper = render(<Abc2Svg abcNotation={'%%fullsvg myprefix\nX:1\nT:Test\nM:4/4\nK:G\nAggg'} />, { disableLifecycleMethods: true })
     expect(wrapper.find('.nobrk'))
       .to.have.length(1)
-    expect(wrapper.find('.f1').html())
+    expect(wrapper.find('.f1myprefix').html())
       .to.equal('Test')
   })
 
   it('renders <Abc2Svg /> with a simple incorrect abcNotation', () => {
     const wrapper = render(<Abc2Svg abcNotation={'X:1\nT:Test\nM:4z/4\nK:G\nAggg'} showErrors />, { disableLifecycleMethods: true })
     expect(wrapper.find('.abc2svg-errors').html())
-      .to.equal('ABC NOTATION:3:1 Error: Bad char &apos;z&apos; in M:<br>\n')
+      .to.equal('ABC NOTATION:4:1 Error: Bad char &apos;z&apos; in M:<br>\n')
   })
 
   it('mounts <Abc2Svg /> with a simple abcNotation', () => {

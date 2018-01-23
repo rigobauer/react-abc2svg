@@ -24,10 +24,11 @@ class Abc2Svg extends PureComponent {
     containerWidth: ''
   }
   
+  uniqueNumber = Date.now() + Math.random()
   abcCallbacks = new Abc2svgCallbacks()
 
   fitWidth = () => {
-    this.setState({ containerWidth: '%%pagewidth ' + window.getComputedStyle(findDOMNode(this)).width + 'px\n' })    
+    this.setState({ containerWidth: '%%pagewidth ' + window.getComputedStyle(findDOMNode(this)).width + '\n'})    
   }
 
   componentDidMount() {
@@ -45,8 +46,8 @@ class Abc2Svg extends PureComponent {
 
     let abc = new Abc(this.abcCallbacks)
     this.abcCallbacks.abc_svg_output = ''
-		this.abcCallbacks.abc_error_output = ''
-    abc.tosvg('ABC NOTATION', containerWidth + abcNotation)
+    this.abcCallbacks.abc_error_output = ''
+    abc.tosvg('ABC NOTATION', '%%fullsvg ra2s' + this.uniqueNumber + '\n' + containerWidth + abcNotation)
 
     return (
       <div style={{ width: '100%' }} >
