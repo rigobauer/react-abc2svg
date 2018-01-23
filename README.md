@@ -18,7 +18,7 @@ A React component that uses the awesome [abc2svg](https://github.com/moinejf/abc
 />
 ```
 
-**IMPORTANT**: If you are using the component multiple times in the same page, to avoid strange behaviours each component needs to have a unique %%fullsvg value. If you con't provide one in the abc notation, the component will generate a random one for you.
+**IMPORTANT**: If you are using the component multiple times in the same page, to avoid strange behaviours each component needs to have a unique `%%fullsvg` value. If you con't provide one in the abc notation, the component will generate a random one for you.
 
 [build-badge]: https://img.shields.io/travis/rigobauer/react-abc2svg/master.svg?style=flat-square
 [build]: https://travis-ci.org/rigobauer/react-abc2svg
