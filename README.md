@@ -18,7 +18,14 @@ A React component that uses the awesome [abc2svg](https://github.com/moinejf/abc
 />
 ```
 
-**IMPORTANT**: If you are using the component multiple times in the same page, to avoid strange behaviours each component needs to have a unique `%%fullsvg` value. If you con't provide one in the abc notation, the component will generate a random one for you.
+## References
+
+* To make things clear, this is just a fancy cover to make you things easier in case you're working with [React](https://reactjs.org). All the hard work related to convert the abc notation to svg was already made by [Jef Moine](https://github.com/moinejf) and his awesome library [abc2svg](https://github.com/moinejf/abc2svg). Don't forget to check it out!
+
+## IMPORTANT:
+
+If you are using the component multiple times in the same page, to avoid strange behaviours each component needs to have a unique `%%fullsvg` value. If you don't provide one in the abc notation, the component will generate a random one for you.
+
 
 [build-badge]: https://img.shields.io/travis/rigobauer/react-abc2svg/master.svg?style=flat-square
 [build]: https://travis-ci.org/rigobauer/react-abc2svg

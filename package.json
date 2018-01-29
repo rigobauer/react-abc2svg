@@ -22,7 +22,7 @@
     "cm": "git-cz"
   },
   "dependencies": {
-    "abc2svg": "^1.15.8",
+    "abc2svg": "^1.15.9",
     "prop-types": "^15.6.0"
   },
   "peerDependencies": {
@@ -38,7 +38,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "semantic-release": "^12.2.4",
-    "sinon": "^4.2.0",
+    "sinon": "^4.2.2",
     "travis-deploy-once": "^4.3.2"
   },
   "author": "Alberto Iglesias",
