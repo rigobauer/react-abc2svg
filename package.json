@@ -4,12 +4,7 @@
   "description": "react-abc2svg React component",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
-  ],
+  "files": ["css", "es", "lib", "umd"],
   "scripts": {
     "build": "nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
@@ -20,6 +15,17 @@
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
     "cm": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --single-quote --no-semi --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "abc2svg": "^1.15.9",
@@ -34,12 +40,15 @@
     "cz-conventional-changelog": "^2.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "nwb": "0.21.x",
+    "husky": "^0.15.0-rc.3",
+    "lint-staged": "^6.1.0",
+    "nwb": "^0.21.3",
+    "prettier": "^1.10.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "semantic-release": "^12.2.4",
+    "semantic-release": "^12.2.2",
     "sinon": "^4.2.2",
-    "travis-deploy-once": "^4.3.2"
+    "travis-deploy-once": "^4.3.3"
   },
   "author": "Alberto Iglesias",
   "homepage": "",
@@ -48,10 +57,7 @@
     "type": "git",
     "url": "https://github.com/rigobauer/react-abc2svg.git"
   },
-  "keywords": [
-    "react-component",
-    "abc2svg"
-  ],
+  "keywords": ["react-component", "abc2svg", "react-abc2svg-drums"],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
